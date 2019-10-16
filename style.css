@@ -30,20 +30,37 @@
 
 .navbar_left {
     height: 80px;
-    width: 20%;
     border: 2px solid pink;
     float: left;
     line-height: 80px;
+    display: inline-block;
 }
 
-.navbar_left a {
-    padding: 0 10px;
-    border: 1px solid orange;
+.navbar_left a#navbar_left_lang {
+    padding-right: 20px;
+    border-right: 2px solid rgb(203,214,226);
     color: rgb(51,71,91);
     text-decoration: none;
 }
 
-.navbar_left i, .navbar_left p {
+.navbar_left a#navbar_left_lang i {
+    display: inline-block;
+}
+
+.navbar_left a#navbar_left_lang i.fa-caret-down {
+    color: rgb(124,152,182);
+    font-size: 125%;
+}
+
+.navbar_left a#navbar_left_lang p {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navbar_left a#navbar_left_contact {
+    padding-left: 20px;
+    color: rgb(51,71,91);
+    text-decoration: none;
     display: inline-block;
 }
 
