@@ -68,11 +68,32 @@
 
 .navbar_right {
     height: 80px;
-    width: 30%;
     border: 2px solid pink;
     float: right;
+    line-height: 80px;
 }
 
+.navbar_right a:nth-child(1) {
+    color: rgb(2,164,189);
+}
+
+.navbar_right a:nth-child(2) {
+    color: rgb(255,122,89);
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(255,122,89);
+    margin: 0 10px 0 20px;
+}
+
+.navbar_right a:nth-child(3) {
+    color: white;
+    background-color: rgb(255,122,89);
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(255,122,89);
+}
 
 /* Styling header */
 
