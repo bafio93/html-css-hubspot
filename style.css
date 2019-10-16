@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    color: rgb(51,71,91);
 }
 
 .container {
@@ -30,7 +31,6 @@
 
 .navbar_left {
     height: 80px;
-    border: 2px solid pink;
     float: left;
     line-height: 80px;
     display: inline-block;
@@ -68,7 +68,6 @@
 
 .navbar_right {
     height: 80px;
-    border: 2px solid pink;
     float: right;
     line-height: 80px;
 }
@@ -134,8 +133,54 @@ header>a {
 /* Styling jumbo */
 
 .jumbo {
-    height: 800px;
     width: 100%;
-    border: 2px solid cyan;
-    background-color: rgb(255,243,238);
+    /* background-color: rgb(255,243,238); */
+    background-image: url(https://i.postimg.cc/W4tGDrzm/Immagine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 10%;
 }
+
+.jumbo:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.jumbo_up {
+    width: 45%;
+    margin: 75px 0 125px;
+}
+
+.jumbo_up h1 {
+    font-size: 400%;
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.jumbo_up p {
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.jumbo_up a {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(255,122,89);
+    text-decoration: none;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(255,122,89);
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.jumbo_up p:nth-of-type(2) {
+    display: block;
+    width: 40%;
+    font-size: 75%;
+}
+
+/* Styling first div */
