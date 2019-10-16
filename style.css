@@ -183,4 +183,31 @@ header>a {
     font-size: 75%;
 }
 
-/* Styling first div */
+/* Styling middle_container */
+
+.middle_container {
+    height: 1000px;
+    width: 100%;
+    padding: 0 20%;
+}
+
+/* Styling first_content div */
+
+.first_content {
+    margin-top: 15%;
+    text-align: center;
+    border: 1px solid orange;
+}
+
+.first_content img {
+    width: 40%;
+}
+
+.first_content h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.first_content p {
+    line-height: 1.5;
+}
