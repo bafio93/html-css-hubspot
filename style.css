@@ -15,7 +15,7 @@
 .scroll_navbar {
     height: 80px;
     width: 100%;
-    border: 2px solid cyan;
+    border-bottom: 2px solid rgb(203,214,226);
     background-color: rgb(245,248,250);
     padding: 0 10%;
 }
@@ -100,7 +100,35 @@
 header {
     height: 80px;
     width: 100%;
-    border: 2px solid cyan;
+    padding: 0 10%;
+    line-height: 80px;
+}
+
+header:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+header>a {
+    float: left;
+    padding: 10px 5px;
+}
+
+.header_right {
+    height: 100%;
+    float: right;
+}
+
+.header_right a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(51,71,91);
+    padding: 10px 10px;
+}
+
+.header_right i {
+    color: rgb(124,152,182);
 }
 
 /* Styling jumbo */
