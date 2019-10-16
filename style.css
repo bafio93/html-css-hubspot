@@ -186,15 +186,21 @@ header>a {
 /* Styling middle_container */
 
 .middle_container {
-    height: 1000px;
     width: 100%;
-    padding: 0 20%;
+    padding: 5% 20% 0;
+    background-color: rgb(245,248,250);
+}
+
+.middle_container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Styling first_content div */
 
 .first_content {
-    margin-top: 15%;
+    margin-bottom: 10%;
     text-align: center;
     border: 1px solid orange;
 }
@@ -210,4 +216,75 @@ header>a {
 
 .first_content p {
     line-height: 1.5;
+}
+
+/* Styling second_content div */
+
+.second_content {
+    width: 100%;
+    height: 300px;
+    border: 1px solid cyan;
+    background-color: white;
+}
+
+.second_content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styling second_content_left div */
+
+.second_content_left {
+    width: 35%;
+    height: 100%;
+    border: 1px solid green;
+    float: left;
+    text-align: center;
+}
+
+.second_content_left img {
+    width: 65%;
+    margin: 20% auto 15%;
+    display: block;
+}
+
+.second_content_left a {
+    display: inline-block;
+    color: white;
+    background-color: rgb(255,122,89);
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(255,122,89);
+}
+
+/* Styling second_content_right div */
+
+.second_content_right {
+    width: 55%;
+    height: 100%;
+    border: 1px solid orange;
+    float: left;
+    padding-top: 6%;
+}
+
+.second_content_right p {
+    line-height: 1.5;
+    margin: 20px 0 40px;
+    font-size: 90%;
+}
+
+.second_content_right_row h3 {
+    text-transform: uppercase;
+    font-size: 85%;
+    display: inline-block;
+    width: 30%;
+}
+
+.second_content_right_row hr{
+    display: inline-block;
+    width: 65%;
+    position: relative;
+    bottom: 4px;
 }
