@@ -460,7 +460,6 @@ header>a {
 .last_container_top {
     height: 40%;
     margin: 0 15%;
-    border: 1px solid pink;
 }
 
 .last_container_top:after {
@@ -475,7 +474,6 @@ header>a {
     float: left;
     width: 20%;
     height: 100%;
-    border: 1px solid pink;
 }
 
 .last_container_top_left h2 {
@@ -494,10 +492,10 @@ header>a {
 /* Styling last_container_top_right */
 
 .last_container_top_right {
-    float: left;
-    width: 80%;
+    float: right;
+    width: 60%;
     height: 100%;
-    border: 1px solid pink;
+    padding: 50px 0;
 }
 
 .last_container_top_right:after {
@@ -506,11 +504,23 @@ header>a {
     clear: both;
 }
 
-.last_container_top_right img {
-    border: 1px solid orange;
+.last_container_top_right figure {
+    float: left;
+    width: 25%;
+    height: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
 }
 
+.last_container_top_right figure img {
+    width: 100%;
+}
 
+.last_container_top_right figure:nth-child(n+5) {
+    margin-top: 35px;
+}
 /* Styling last_container_bottom */
 
 .last_container_bottom {
