@@ -623,3 +623,19 @@ footer {
 .footer_top li a:hover {
     color: rgb(141,187,217);
 }
+
+a#free_menu, a#free_menu i {
+    color: white;
+}
+
+a#contact_link {
+    color: rgb(51,71,91);
+    background-color: white;
+    text-decoration: none;
+    font-size: 80%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: 20px 0;
+}
