@@ -104,10 +104,11 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background-color: rgb(51,71,91);
-    border: 1px solid rgb(51,71,91);
+    background-color: rgb(61,81,101);
+    border: 1px solid rgb(61,81,101);
     border-radius: 50%;
-    padding: 15px;
+        /* box-shadow: 0 2px 10px rgba(0,0,0,.2), 0 4px 28px rgba(0,0,0,.3) */
+    padding: 17px 15px;
 }
 
 .chat a i {
@@ -743,4 +744,10 @@ a#contact_link {
 
 .footer_bottom a:hover {
     color: rgb(141,187,217);
+}
+
+/* Styling nice stuff */
+
+a.orange_button:hover {
+    background-color: rgb(255,132,99);
 }
