@@ -9,11 +9,14 @@
 .container {
     width: 100%;
     height: auto;
+    margin-top: 80px;
 }
 
 /* Styling scroll_navbar */
 
 .scroll_navbar {
+    position: fixed;
+    top: 0;
     height: 80px;
     width: 100%;
     border-bottom: 2px solid rgb(203,214,226);
@@ -72,7 +75,7 @@
     line-height: 80px;
 }
 
-.navbar_right a:nth-child(1) {
+.navbar_right a#lens {
     color: rgb(2,164,189);
 }
 
