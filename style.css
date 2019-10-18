@@ -579,7 +579,6 @@ header>a {
 /* Styling footer */
 
 footer {
-    height: 1000px;
     background-color: rgb(51,71,91);
     padding: 7.5% 10%;
 }
@@ -650,8 +649,8 @@ a#contact_link {
 /* Styling footer_lang */
 
 .footer_lang {
-    height: 100px;
     width: 100%;
+    padding: 0 20%;
     border-bottom: 1px solid rgb(193,214,221);
     float: left;
     text-align: center;
@@ -661,5 +660,66 @@ a#contact_link {
 
 .footer_lang a {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
+}
+
+/* Styling footer_bottom */
+
+.footer_bottom {
+    width: 100%;
+}
+
+.footer_bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styling footer_bottom content*/
+
+.footer_bottom figure {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.footer_bottom .footer_stuff {
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.footer_bottom a img{
+    margin: 20px 0 10px;
+}
+
+.footer_bottom p {
+    color: rgb(193,214,221);
+    font-size: 75%;
+}
+
+.footer_bottom .footer_stuff a {
+    color: rgb(193,214,221);
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0 10px;
+}
+
+.footer_bottom .footer_stuff:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer_bottom .footer_stuff a:first-of-type {
+    float: left;
+}
+
+.footer_bottom .footer_stuff a:last-of-type {
+    float: right;
+    margin-right: 30px;
+}
+
+.footer_bottom a:hover {
+    color: rgb(141,187,217);
 }
