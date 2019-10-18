@@ -775,7 +775,9 @@ a#contact_link {
     color: rgb(141,187,217);
 }
 
-/* Styling nice stuff */
+/* Styling nice, unrequested stuff! */
+
+/* Styling nice stuff: call to action */
 
 a.orange_button:hover {
     background-color: rgb(255,132,99);
@@ -783,4 +785,52 @@ a.orange_button:hover {
 
 a.white_button:hover, a.white_button#contact_link:hover {
     background-color: rgb(233,244,255);
+}
+
+/* Styling nice stuff: uncovered_menu */
+
+.uncovered_menu {
+	position: relative;
+	background-color: cyan;
+	border-radius: 5px;
+    width: 125px;
+    margin-left: 10%;
+}
+
+.uncovered_menu ul {
+    list-style: none;
+    position: relative;
+    line-height: 2;
+}
+
+.uncovered_menu a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.uncovered_menu ul li a:hover {
+    background-color: rgb(174,214,226);
+}
+
+/* Cool instructions for styling the pointer: */
+.uncovered_menu:after {
+	position: absolute; /* :absolute so it moves around the bubble. */
+	top: 0; /* top:0 so that it moves on top of the bubble */
+	right: 20%; /* Defines position (as upper instruction) */
+    content: '';
+	width: 0;
+	height: 0; /* Along with two instructions before, it makes the div an empty space. The pointer is all borders!!! */
+	border: 8px solid transparent;
+    /* Having this instruction, we'll have an nxn square, all made out of borders (since content is null). We'll need to color them: the space for every border is actually half the size  */
+	border-bottom-color: cyan;
+    /* border-top-color: orange;
+    border-left-color: cyan;
+    border-right-color: magenta;
+    That's extra nice!!!*/
+	border-top: 0; /* This instruction deletes the top border. This apparently leaves extra room for the bottom  */
+    /* Used for moving the cursor: put top (or bottom) the same value of border. That's for better positioning, we already have left and top instructions. */
+	margin-left: 8px;
+	margin-top: -8px;
 }
