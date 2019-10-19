@@ -159,7 +159,7 @@
 
 /* Styling scrolling chat icon */
 
-.chat a {
+.chat {
     display: block;
     position: fixed;
     bottom: 25px;
@@ -168,14 +168,63 @@
     border: 1px solid rgb(61,81,101);
     border-radius: 50%;
     padding: 17px 15px;
-    z-index: 40;
+    z-index: 60;
+    box-shadow: 0 0 20px 2px rgba(124,152,182,0.2);
+    cursor: pointer;
 }
 
-.chat a i {
+.chat i {
     color: white;
     font-size: 200%;
 }
 
+.chat_baloon {
+    width: 250px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 120px;
+    right: 25px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 40px 2px rgba(124,152,182,0.4);
+    z-index: 200;
+}
+
+.chat_baloon::after {
+    content: none;
+    display: table;
+    clear: both;
+}
+
+.chat_baloon i,.chat_baloon p, .chat_baloon img {
+}
+
+.chat_baloon img[alt="nice_bot"] {
+    position: absolute;
+    width: 50px;
+    bottom: 85px;
+    right: 100px;
+}
+
+.chat_baloon img[alt="under_baloon"] {
+    position: absolute;
+    top: 105px;
+    left: 175px;
+}
+
+.chat_baloon i.fa-times {
+    display: inline-block;
+    float: right;
+    color: rgb(202,214,227);
+}
+
+.chat_baloon p {
+    float: left;
+    font-size: 97%;
+    line-height: 1.5;
+}
 /* Styling header */
 
 header {
