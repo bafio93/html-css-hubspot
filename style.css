@@ -753,7 +753,7 @@ header>a {
 
 footer {
     background-color: rgb(51,71,91);
-    padding: 7.5% 10%;
+    padding: 7.5% 10% 2.5%;
 }
 
 /* Styling footer_top */
@@ -897,8 +897,6 @@ a#contact_link {
     color: rgb(141,187,217);
 }
 
-/* Styling nice, unrequested stuff! */
-
 /* Styling nice stuff: call to action */
 
 a.orange_button:hover {
@@ -908,8 +906,3 @@ a.orange_button:hover {
 a.white_button:hover, a.white_button#contact_link:hover {
     background-color: rgb(233,244,255);
 }
-
-/* Bot image url: */
-/* https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg */
-/* Tail url: */
-/* https://static.hsappstatic.net/conversations-visitor-experience-components/static-1.1239/img/visitor-widget/initialMessageBubbleTail.svg */
