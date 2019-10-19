@@ -22,6 +22,7 @@
     border-bottom: 2px solid rgb(203,214,226);
     background-color: rgb(245,248,250);
     padding: 0 10%;
+    z-index: 40;
 }
 
 .scroll_navbar:after {
@@ -87,11 +88,12 @@
 .uncovered_menu {
 	position: relative;
 	background-color: white;
-    box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 2px rgba(124,152,182,0.2);
 	border-radius: 5px;
     width: 125px;
     bottom: 15px;
     display: none;
+    z-index: 40;
 }
 
 .uncovered_menu ul {
@@ -166,6 +168,7 @@
     border: 1px solid rgb(61,81,101);
     border-radius: 50%;
     padding: 17px 15px;
+    z-index: 40;
 }
 
 .chat a i {
@@ -488,6 +491,18 @@ header>a {
     border: 1px solid rgb(255,122,89);
     display: inline-block;
     margin: 15px 0 0;
+}
+
+/* Styling :hover on middle containers */
+
+.third_content_left:hover, .third_content_middle:hover, .third_content_right:hover, .second_content:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px 10px rgba(124,152,182,0.2);;
+    z-index: 20;
+}
+
+.third_content_left, .third_content_middle, .third_content_right, .second_content {
+    box-shadow: 0 0 20px 2px rgba(124,152,182,0.2);;
 }
 
 /* Styling nice_blue_container */
@@ -845,4 +860,7 @@ a.white_button:hover, a.white_button#contact_link:hover {
     background-color: rgb(233,244,255);
 }
 
-/* Styling nice stuff: uncovered_menu */
+/* Bot image url: */
+/* https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg */
+/* Tail url: */
+/* https://static.hsappstatic.net/conversations-visitor-experience-components/static-1.1239/img/visitor-widget/initialMessageBubbleTail.svg */
