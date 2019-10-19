@@ -78,8 +78,51 @@
     float: left;
 }
 
-.navbar_awesome:hover {
-    visibility: visible;
+.navbar_awesome:hover .uncovered_menu {
+    display: block;
+}
+
+/* Styling drop down menu */
+
+.uncovered_menu {
+	position: relative;
+	background-color: white;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
+	border-radius: 5px;
+    width: 125px;
+    bottom: 15px;
+    display: none;
+}
+
+.uncovered_menu ul {
+    list-style: none;
+    position: relative;
+    line-height: 2;
+}
+
+.uncovered_menu a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.uncovered_menu ul li a:hover {
+    background-color: rgb(174,214,226);
+}
+
+.uncovered_menu:after {
+	position: absolute;
+	top: 0;
+	right: 15%;
+    content: '';
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-bottom-color: white;
+	border-top: 0;
+	margin-left: 8px;
+	margin-top: -8px;
 }
 
 /* Styling scroll_navbar (right) */
@@ -803,50 +846,3 @@ a.white_button:hover, a.white_button#contact_link:hover {
 }
 
 /* Styling nice stuff: uncovered_menu */
-
-.uncovered_menu {
-	position: relative;
-	background-color: cyan;
-	border-radius: 5px;
-    width: 125px;
-    bottom: 15px;
-    visibility: visible;
-}
-
-.uncovered_menu ul {
-    list-style: none;
-    position: relative;
-    line-height: 2;
-}
-
-.uncovered_menu a {
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    padding-left: 20px;
-}
-
-.uncovered_menu ul li a:hover {
-    background-color: rgb(174,214,226);
-}
-
-/* Cool instructions for styling the pointer: */
-.uncovered_menu:after {
-	position: absolute; /* :absolute so it moves around the bubble. */
-	top: 0; /* top:0 so that it moves on top of the bubble */
-	right: 15%; /* Defines position (as upper instruction) */
-    content: '';
-	width: 0;
-	height: 0; /* Along with two instructions before, it makes the div an empty space. The pointer is all borders!!! */
-	border: 8px solid transparent;
-    /* Having this instruction, we'll have an nxn square, all made out of borders (since content is null). We'll need to color them: the space for every border is actually half the size  */
-	border-bottom-color: cyan;
-    /* border-top-color: orange;
-    border-left-color: cyan;
-    border-right-color: magenta;
-    That's extra nice!!!*/
-	border-top: 0; /* This instruction deletes the top border. This apparently leaves extra room for the bottom  */
-    /* Used for moving the cursor: put top (or bottom) the same value of border. That's for better positioning, we already have left and top instructions. */
-	margin-left: 8px;
-	margin-top: -8px;
-}
